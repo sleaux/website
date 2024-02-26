@@ -1,5 +1,10 @@
 <script>
-    import '../app.css';
+    import "../app.css";
 </script>
 
-<slot />
+<div class="flex flex-col items-center gap-5 p-5 font-text text-text">
+    <h1>
+        <p>Hello</p>
+    </h1>
+    <slot />
+</div>

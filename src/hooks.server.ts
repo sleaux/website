@@ -1,4 +1,4 @@
-import { dev } from '$app/environment';
+import { dev } from "$app/environment";
 
 /*
   When developing, this hook will add proxy objects to the `platform` object which
@@ -8,7 +8,7 @@ import { dev } from '$app/environment';
 let platform: App.Platform;
 
 if (dev) {
-    const { getPlatformProxy } = await import('wrangler');
+    const { getPlatformProxy } = await import("wrangler");
     platform = await getPlatformProxy();
 }
 
@@ -16,7 +16,7 @@ export const handle = async ({ event, resolve }) => {
     if (platform) {
         event.platform = {
             ...event.platform,
-            ...platform
+            ...platform,
         };
     }
 

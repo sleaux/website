@@ -2,7 +2,7 @@
     import TextWithIcon from "$lib/TextWithIcon.svelte";
 </script>
 
-<div class="flex flex-col">
+<div class="flex flex-col gap-4">
     <div class="flex justify-center"><h1>uses</h1></div>
     <img src="/uses computer.webp" alt="" />
     <div class="flex flex-col gap-4">
